@@ -5,25 +5,25 @@ import java.math.BigDecimal;
 public class BankAccount implements Valuable{
     private String name;
     private String accountNumber;
-    private BigDecimal balance;
+    private double balance;
 
-    public BankAccount(String name, String accountNumber, BigDecimal balance) {
+    public BankAccount(String name, String accountNumber, double balance) {
         this.name = name;
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
 
-    public void deposit(BigDecimal amount){
-        this.balance.add(amount) ;
+    public void deposit(double amount){
+        this.balance+=amount;
     }
 
-    public void withdraw(BigDecimal amount){
-        this.balance.subtract(amount)  ;
+    public void withdraw(double amount){
+        this.balance-=amount;
     }
 
     @Override
     public double getValue(){
-        return balance.doubleValue();
+        return balance;
     }
 
 }
