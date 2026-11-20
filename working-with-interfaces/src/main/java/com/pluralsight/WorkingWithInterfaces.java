@@ -15,6 +15,7 @@ public class WorkingWithInterfaces {
         myFamily.add( new Person("Ezra", "Aiden", 17) );
         myFamily.add(new Person("John", "Smith", 30));
         myFamily.add(new Person("John", "Smith", 20));
+        myFamily.add(new Person("Adam", "Arons", 50));
         myFamily.add(new Person("Adam", "Smith", 40));
         Collections.sort(myFamily);
 
